@@ -16,9 +16,11 @@ $("#start").click(function(){
 })
 
 $("#restart-button").click(function() {
-    $(".welcome").show(); 
-    $(".search").hide(); 
-    $(".results").hide();  
+    $(".welcome").hide(); 
+    $(".search").show(); 
+    $(".results").hide();
+    document.querySelector(".dogs-form-input").value = '';          
+     
 })
 
     function getImage(dogBreed) {
